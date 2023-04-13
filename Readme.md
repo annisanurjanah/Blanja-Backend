@@ -9,8 +9,12 @@
 | [CORS] | npm i cors |
 | [Eslint] | npm i eslint |
 | [Http-errors] | npm i http-errors |
-| [helmet] | npm i helmet |
-| [dotenv] | npm i dot env |
+| [Helmet] | npm i helmet |
+| [Bcryptjs] | npm i bcryptjs |
+| [Multer] | npm i multer |
+| [Uuid] | npm i uuid |
+| [Jsonwebtoken] | npm i jsonwebtoken |
+
 
 
 
@@ -23,8 +27,12 @@
 [CORS]: <https://www.npmjs.com/package/cors>
 [Eslint]: <https://eslint.org>
 [Http-errors]: <https://www.npmjs.com/package/http-errors>
-[helmet]: <https://helmetjs.github.io/>
-[dotenv]: <https://www.npmjs.com/package/dotenv>
+[Helmet]: <https://helmetjs.github.io>
+[Bcryptjs]: <https://www.npmjs.com/package/bcryptjs>
+[Multer]: <https://www.npmjs.com/package/multer>
+[Uuid]: <https://www.npmjs.com/package/uuid>
+[Jsonwebtoken]: <https://www.npmjs.com/package/jsonwebtoken>
+
 
 
 ## Installation

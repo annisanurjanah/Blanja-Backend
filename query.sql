@@ -5,23 +5,25 @@ create database belanja;
 create type enum_type AS ENUM('L','P');
 
 create table customer(
-    id_customer int primary key not null,
-    name varchar(255) not null,
-    phone int not null,
-    password varchar(10) not null,
+    id_customer varchar(255) primary key not null,
+    fullname varchar(255) not null,
     email varchar(255) not null,
-    gender enum_type,
-    tgl_lahir date
+    password varchar(255) not null,
+    phone varchar(255) not null,
+    gender enum_type not null,
+    tgl_lahir date not null,
+    role varchar(255) not null
 );
 
 create table seller(
-    id_seller int primary key not null,
-    name varchar(255) not null,
-    phone int not null,
-    password varchar(10) not null,
+    id_seller varchar(255) primary key not null,
+    fullname varchar(255) not null,
     email varchar(255) not null,
-    gender enum_type,
-    tgl_lahir date
+    password varchar(255) not null,
+    phone varchar(255) not null,
+    gender enum_type not null,
+    tgl_lahir date not null,
+    role varchar(255) not null
 );
 
 create table category(
@@ -30,7 +32,7 @@ create table category(
 );
 
 create table product(
-    id_produk int primary key not null,
+    id_produk varchar(255) primary key not null,
     name varchar(255) not null,
     price int not null,
     deskripsi varchar(255),
@@ -38,10 +40,19 @@ create table product(
     rating int not null,
     color varchar(100) not null,
     size int,
+    photo varchar(255),
     id_category int,
     CONSTRAINT fk_category FOREIGN KEY (id_category) REFERENCES category(id_category),
-    id_seller int,
+    id_seller varchar(255),
     CONSTRAINT fk_seller FOREIGN KEY (id_seller) REFERENCES seller(id_seller)
+);
+
+create table users(
+    id_users varchar primary key not null,
+    email varchar not null,
+    password varchar not null,
+    fullname varchar not null,
+    role varchar not null
 );
 
 insert into customer (id_customer, name, phone, password, email, gender, tgl_lahir) 
@@ -61,3 +72,9 @@ insert into product (id_produk, name, price, deskripsi, stock, rating, color, si
 values (1, 'celana', 75000, 'ini adalah celana', 10, 5, 'hitam', 20, 1, 1), 
 (2, 'kalung', 300000, 'ini adalah kalung', 15, 4, 'emas', 25, 2, 2),  
 (3, 'higheels', 150000, 'ini adalah higheels', 5, 3, 'merah', 39, 3, 3);
+
+ALTER TABLE customer
+ADD (fullname varchar(255),
+        email varchar(255),
+        password varchar(255),
+        role varchar(255));
