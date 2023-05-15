@@ -96,7 +96,7 @@ git clone https://github.com/Shaniara28/Intermediate-Backend
 - Go To Folder Repo
 
 ```
-cd BE-HIREJOB
+cd intermediate-backend
 ```
 
 - Install Module
