@@ -145,11 +145,11 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Related Project
 
-:rocket: [`Backend Peeworld`](https://github.com/Shaniara28/Intermediate-Backend)
+:rocket: [`Backend Blanja`](https://github.com/Shaniara28/Intermediate-Backend)
 
-:rocket: [`Frontend Peeworld`](https://github.com/Shaniara28/blanja_frontend)
+:rocket: [`Frontend Blanja`](https://github.com/Shaniara28/blanja_frontend)
 
-:rocket: [`Demo Peeworld`](#)
+:rocket: [`Demo Blanja`](#)
 
 <!-- CONTACT -->
 
