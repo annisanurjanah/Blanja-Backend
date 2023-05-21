@@ -6,7 +6,7 @@
     <image align="center" width="100" src='/src/assets/img/Vector.png' />
   </p>
   <p align="center">
-    <a href="#">View Demo</a>
+    <a href="https://blanja-frontend-lyart.vercel.app/">View Demo</a>
   </p>
 </p>
 
@@ -149,7 +149,7 @@ Contributions are what make the open source community such an amazing place to b
 
 :rocket: [`Frontend Blanja`](https://github.com/Shaniara28/blanja_frontend)
 
-:rocket: [`Demo Blanja`](#)
+:rocket: [`Demo Blanja`](https://blanja-frontend-lyart.vercel.app/)
 
 <!-- CONTACT -->
 
