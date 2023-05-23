@@ -17,7 +17,7 @@ app.use(
   })
 );
 app.use(cors({
-    origin: ['https://blanja-frontend-lyart.vercel.app', 'http://localhost:4000'],
+    origin: ['https://blanja-frontend-lyart.vercel.app', 'http://localhost:3000'],
     credentials: true,
     methods: 'GET, POST, PUT, DELETE',
   }));
