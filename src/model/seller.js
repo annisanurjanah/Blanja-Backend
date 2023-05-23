@@ -14,8 +14,8 @@ const selectSeller = (id) => {
 // }
 
 const updateSeller = (data) => {
-  const { id, fullname, email, password, phone, gender, tgl_lahir, role } = data;
-  return Pool.query(`UPDATE seller SET fullname='${fullname}', email='${email}', password='${password}', phone='${phone}', gender='${gender}', tgl_lahir='${tgl_lahir}', role='${role}' WHERE id_seller='${id}'`);
+  const { id, fullname, email, password, phone, tgl_lahir, role } = data;
+  return Pool.query(`UPDATE seller SET fullname='${fullname}', email='${email}', password='${password}', phone='${phone}', tgl_lahir='${tgl_lahir}', role='${role}' WHERE id_seller='${id}'`);
 };
 
 const deleteSeller = (id) => {
