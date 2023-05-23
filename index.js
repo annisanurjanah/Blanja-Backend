@@ -16,7 +16,11 @@ app.use(
     extended: true,
   })
 );
-app.use(cors());
+app.use(cors({
+    origin: ['https://blanja-frontend-lyart.vercel.app/', 'http://localhost:4000'],
+    credentials: true,
+    methods: 'GET, POST, PUT, DELETE',
+  }));
 app.use(morgan('dev'));
 
 // router utama
